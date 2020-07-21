@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="public/css/dashboard.css">
+    
+    <title>School Management App</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler  ml-auto mb-5 " type="button" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>       
+        
+      <div class="collapse navbar-collapse" id="#myNavbar">
+        <div class="container-fluid">
+            <div class="row"> 
+                <!-- sidebar -->
+                <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top" >
+                 <a href="" class="navbar-brand text-white d-block mr-auto text-center py-3 mb-4 bottom-border">School App</a>
+                 <div class="bottom-border pb-3">
+                     <img src="./img/profileimage.jpg" alt="" width="50" class="rounded-circle mr-3">
+                     <a href="" class="text-white">Fouhad Olalekan</a>
+                 </div> 
+                 <ul class="navbar-nav flex-column mt-4">
+                     <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fa fa-home text-white fa-lg mr-3"></i>Dashboard</a></li>
+                     <li class="nav-item"><a href="department.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-building text-white fa-lg mr-3"></i>Department</a></li>
+                     <li class="nav-item"><a href="course.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-graduation-cap text-white fa-lg mr-3"></i>Course Registration</a></li>
+                     <li class="nav-item"><a href="" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-envelope text-white fa-lg mr-3"></i>inbox</a></li>
+                     <li class="nav-item"><a href="" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-user text-white fa-lg mr-3"></i>Profile</a></li>
+                     <li class="nav-item"><a href="" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fa fa-line-chart text-white fa-lg mr-3"></i>Level</a></li>
+                 </ul>
+                </div> 
+                <!-- topnavbar -->
+               <div class="col-xl-10 col-lg-9 col-md-8 ml-auto fixed-top py-2 bg-dark top-navbar"> 
+                 <div class="row align-item-center">
+                     <div class="col-md-4">
+                      <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+                     </div>
+                     <div class="col-md-5">
+                       <form>
+                           <div class="input-group">
+                               <input type="text" class="form-control search-input"   placeholder="search">
+                               <button type="button" class="btn btn-white search-button"><i class="fa fa-search text-danger"></i> </button>
+                           </div>
+                       </form>
+                     </div>
+                     <div class="col-md-3">
+                     <ul class="navbar-nav">
+                         <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-commerce text-muted fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item ml-md-auto"><a href="" class="nav-link" data-toggle="modal" data-target="#signout"><i class="fa fa-sign-out  text-danger fa-lg"></i></a>
+                        </li>
+                     </ul>
+                     </div>
+             </div>
+             </div>
+           </div>
+        </div>
+     </div> 
+ </nav>
+<!-- navbar ends -->
+<!-- modal for signout and signin -->
+
+<div class="modal " id="signout">
+   <div class="modal-dailog">
+      <div class="modal-content"style="width:218px;height:270px;" >
+        <div class="modal-header" >
+            <h4 class="modal-title" >About to sign-out</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+          <div class="modal-body">
+            Logout
+          </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Continue</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Log out</button>
+        </div>
+      </div>
+   </div>
+</div>
+  <!-- creating a card -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-xl-10 col-lg-9 col-md-8 ml-auto">
+         <div class="row pt-md-5 mt-md-3 mb-5">
+           <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-effect">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between" >
+                    <i class="fa fa-lock fa-3x text-danger" ></i>
+                    <div class="text-right text-secondary" style="font-size: 6px;">
+                      <h3 class="" style="font-size: 18px;">No: Students</h3>
+                      <h5>850</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-secondary">
+                   <i class="fa fa-refresh"></i>
+                   <span>Updated Num</span>
+                </div>
+              </div>
+           </div>
+           <div class=" col-xl-3 col-sm-6 p-2">
+            <div class="card card-effect">
+              <div class="card-body">
+                <div class="d-flex justify-content-between" >
+                  <i class="fa fa-graduation-cap fa-3x text-success" ></i>
+                  <div class="text-right text-success" style="font-size: 6px;">
+                    <h3 class="" style="font-size: 18px;">Total Course</h3>
+                    <h5>75</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-secondary">
+                 <i class="fa fa-refresh"></i>
+                 <span>Updated Num</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 p-2">
+            <div class="card card-effect">
+              <div class="card-body">
+                <div class="d-flex justify-content-between" >
+                  <i class="fa fa-money fa-3x text-success" ></i>
+                  <div class="text-right text-secondary" style="font-size: 6px;">
+                    <h3 class="" style="font-size: 18px;"> Student Fee</h3>
+                    <h5>N8500</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-secondary">
+                 <i class="fa fa-refresh"></i>
+                 <span>Updated Num</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 p-2">
+            <div class="card card-effect">
+              <div class="card-body">
+                <div class="d-flex justify-content-between" >
+                  <i class="fa fa-book fa-3x text-primary" ></i>
+                  <div class="text-right text-secondary" style="font-size: 6px;">
+                    <h3 class="" style="font-size: 18px;">New Students</h3>
+                    <h5>500</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer text-secondary">
+                 <i class="fa fa-refresh"></i>
+                 <span>Updated Num</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
