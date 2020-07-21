@@ -25,7 +25,7 @@ app.use(BASE_URI, router);
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'ap now live',
+    message: 'app now live',
   });
 });
 
